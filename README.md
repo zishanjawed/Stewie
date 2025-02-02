@@ -1,98 +1,52 @@
 
-  # VS Code Readme Editor 📝  
-  Import your existing Readme using the import button at the bottom, 
-  or create a new Readme from scratch by typing in the editor.  
-  
-  ## Get Started 🚀  
-  To get started, hit the 'clear' button at the top of the editor!  
-  
-  ## Prebuilt Components/Templates 🔥  
-  You can checkout prebuilt components and templates by clicking on the 'Add Section' button or menu icon
-  on the top left corner of the navbar.
-      
-  ## Save Readme ✨  
-  Once you're done, click on the save button to download and save your ReadMe!
-  
-# Project Title  
-This is an example of an in-depth ReadMe.  
 
-## Badges  
+#	Project Overview:
+Describe the purpose of the RAG application and the crawling features (page, site, local) that have been implemented. Mention the use of Crawl4AI, FastAPI, and asynchronous processing.
+	•	Project Structure:
+Provide a brief directory tree similar to:
 
-Add badges from somewhere like: [shields.io](https://shields.io/)  
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://choosealicense.com/licenses/gpl-3.0/)  
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)
+.
+├── README.md
+├── requirements.txt
+├── config.py
+├── main.py
+├── crawlers
+│   ├── local
+│   │   └── crawl_local.py
+│   ├── page
+│   │   └── crawl_page.py
+│   └── site
+│       └── crawl_site.py
+└── utils
+    └── logging_config.py
 
-# Table of contents  
-1. [Introduction](#introduction)  
-2. [Some paragraph](#paragraph1)  
-    1. [Sub paragraph](#subparagraph1)  
-3. [Another paragraph](#paragraph2)  
 
-## Screenshots  
+	•	Setup and Installation:
+Explain how to install dependencies (e.g., pip install -r requirements.txt) and how to set the PYTHONPATH if needed. Include instructions for setting up Playwright:
 
-![App Screenshot](https://lanecdr.org/wp-content/uploads/2019/08/placeholder.png)
+python -m playwright install chromium
 
-## Tech Stack  
 
-**Client:** React, Redux, TailwindCSS  
+	•	Running the Application:
+Describe how to start the FastAPI server:
 
-**Server:** Node, Express
+python main.py --mode page --url "https://docs.crawl4ai.com/" --verbose
 
-## Features  
+Also include how to use curl or Postman to send requests to the /crawl endpoint.
 
-- Light/dark mode toggle  
-- Live previews  
-- Fullscreen mode  
-- Cross platform 
+	•	Testing:
+Outline how to run unit tests using pytest:
 
-## Lessons Learned  
+pytest tests/
 
-What did you learn while building this project? What challenges did you face and how did you overcome t
 
-## Run Locally  
 
-Clone the project  
 
-~~~bash  
-  git clone https://link-to-project
-~~~
+2. Docker 
 
-Go to the project directory  
+docker run -p 8000:8000 lcl-stewie
 
-~~~bash  
-  cd my-project
-~~~
 
-Install dependencies  
+	3.	Test the Endpoint:
+Use curl or Postman to send a POST request to http://localhost:8000/crawl as before.
 
-~~~bash  
-npm install
-~~~
-
-Start the server  
-
-~~~bash  
-npm run start
-~~~
-
-## Environment Variables  
-
-To run this project, you will need to add the following environment variables to your .env file  
-`API_KEY`  
-
-`ANOTHER_API_KEY` 
-
-## Acknowledgements  
-
-- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
-## Feedback  
-
-If you have any feedback, please reach out to us at fake@fake.com
-
-## License  
-
-[MIT](https://choosealicense.com/licenses/mit/)
