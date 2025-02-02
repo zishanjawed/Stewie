@@ -1,0 +1,8 @@
+2025-02-02 08:52:22,001 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-02-02 08:56:44,809 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-02-02 09:08:53,529 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-02-02 09:11:11,191 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-02-02 09:12:02,545 - crawlers.page.crawl_page - INFO - Starting crawl for single page: https://docs.crawl4ai.com/
+2025-02-02 09:15:45,256 - asyncio - DEBUG - Using selector: KqueueSelector
+2025-02-02 09:15:48,869 - crawlers.page.crawl_page - INFO - Starting crawl for single page: https://docs.crawl4ai.com/
+2025-02-02 09:15:56,035 - crawlers.page.crawl_page - INFO - Successfully crawled https://docs.crawl4ai.com/
